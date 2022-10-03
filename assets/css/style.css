@@ -189,3 +189,14 @@ hr {
 .right-about-heading h2, .right-about-heading p {
     text-align: right;
 }
+
+/* Event Times */
+
+#times {
+    background: url('../images/dublin-city.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+}
