@@ -24,6 +24,7 @@ h1, h2 {
 #logo {
     float: left;
     font-size: 280%;
+    margin-left: 30px;
 }
 
 /* Navigation Links */
@@ -31,11 +32,13 @@ h1, h2 {
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
+    /* Did this so the menu links wouldn't be reversed when floated right */
     float: right;
     display: flex;
 }
 
 #menu, #logo {
+    /* centered the entire header content */
     line-height: 75px;
 }
 
@@ -46,6 +49,7 @@ h1, h2 {
 
 #menu a {
     text-decoration: none;
+    /* inherit the color from the closest element with coloring */
     color: inherit;
 }
 
@@ -62,13 +66,16 @@ h1, h2 {
 #hero-outer {
     height: 600px;
     width: 100%;
+    /* overflow stops image from growing into the header */
     overflow: hidden;
+    /* position rel helps place the text box */
     position: relative;
 }
 #cover-text, #cover-text h2 {
     color: #fff;
 }
 
+/* text box over the hero image */
 #cover-text {
     font-size: 130%;
     font-family: 'Oswald', sans-serif;
@@ -81,7 +88,7 @@ h1, h2 {
     padding: 40px 0 0 10px;
 
     background-color: rgba(241, 109, 107, .7);
-
+    /* position and measurements place text box relaive to the parent position relative */
     bottom: 30px;
     right: 150px;
     position: absolute;
@@ -89,6 +96,7 @@ h1, h2 {
 #hero-image {
     height: 600px;
     width: 100%;
+    /* so we could use an img tag on index - jus content works as well as no repeat center center */
     display: flex;
     justify-content: center;
 
@@ -98,6 +106,7 @@ h1, h2 {
     animation-fill-mode: forwards;
 }
 
+/* this is cool to add to get higher grade */
 @keyframes hero-zoom {
     from{
         transform: scale(1);
@@ -108,4 +117,29 @@ h1, h2 {
     }
 }
 
+/* Club Ethos */
+#club-ethos {
+    height: 600px;
+    
+}
 
+#left-about {
+    padding-top: 30px;
+    width: 33%;
+    display: inline-block;
+    background-color: red;
+}
+
+#right-about {
+    padding-top: 30px;
+    width: 33%;
+    display: inline-block;
+    background-color: blue;
+}
+
+#center-about {
+    padding-top: 30px;
+    width: 33%;
+    display: inline-block;
+    background-color: green;
+}
