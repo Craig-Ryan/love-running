@@ -282,6 +282,13 @@ footer {
     hr {
         display: none;
     }
+
+    #times > div {
+        width: 100%;
+        flex-direction: column;
+        height: 150px;
+        padding: 0;
+    }
 }
 
 /* Medium Size Screens */
