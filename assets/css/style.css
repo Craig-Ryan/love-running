@@ -238,3 +238,18 @@ footer {
     padding: 5%;
     color: #3a3a3a;
 }
+
+/*  Gallery Page */
+
+#photos {
+    /* move below the header */
+    clear: both;
+    /* removes white line in between */
+    line-height: 0;
+    column-count: 4;
+    column-gap: 0;
+}
+
+#photos > img {
+    width: 100%;
+}
